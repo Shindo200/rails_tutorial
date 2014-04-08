@@ -24,7 +24,7 @@ describe "Static pages" do
 
       before { sign_in user }
 
-      describe "have 1 micropost" do
+      context "have 1 micropost" do
         before do
           FactoryGirl.create(:micropost, user: user, content: "Lorem ipsum")
           visit root_path
@@ -33,7 +33,7 @@ describe "Static pages" do
         it { should have_content("1 micropost") }
       end
 
-      describe "have 2 microposts" do
+      context "have 2 microposts" do
         before do
           FactoryGirl.create(:micropost, user: user, content: "Lorem ipsum")
           FactoryGirl.create(:micropost, user: user, content: "Dolor sit amet")

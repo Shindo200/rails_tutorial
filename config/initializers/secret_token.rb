@@ -25,3 +25,7 @@ def secure_token
 end
 
 RailsProject::Application.config.secret_key_base = secure_token
+
+puts "-------------"
+puts RailsProject::Application.secure_token
+puts "-------------"

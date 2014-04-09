@@ -23,3 +23,6 @@ doc/
 .DS_Store
 .idea
 .secret
+
+# Coveralls files
+/coverage
